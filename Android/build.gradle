@@ -188,7 +188,7 @@ android {
     productFlavors {
         dev {
             applicationIdSuffix ".debug"
-            resValue "string", "app_title", "Tower Dev"
+            resValue "string", "app_title", "Huyen Tower"
             resValue "string", "baidu_api_key", ""
             versionName generateVersionName(versionPrefix, versionMajor, versionMinor, versionPatch, "debug.${versionBuild}")
 
@@ -198,7 +198,7 @@ android {
 
         beta {
             applicationIdSuffix ".beta"
-            resValue "string", "app_title", "Tower Beta"
+            resValue "string", "app_title", "HTower Beta"
             resValue "string", "baidu_api_key", "4x7A3lUHEmzFxosafDa4bLP7yinmEnPh"
             versionName generateVersionName(versionPrefix, versionMajor, versionMinor, versionPatch, "beta.${versionBuild}")
 
@@ -207,7 +207,7 @@ android {
         }
 
         prod {
-            resValue "string", "app_title", "Tower"
+            resValue "string", "app_title", "Huyen Tower"
             resValue "string", "baidu_api_key", "41mPy2URFjOL61GzyWk8U5oLhhwSYGWe"
             buildConfigField "boolean", "WRITE_LOG_FILE", "false"
 

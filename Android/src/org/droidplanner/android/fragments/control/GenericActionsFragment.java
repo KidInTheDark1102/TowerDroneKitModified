@@ -51,23 +51,23 @@ public class GenericActionsFragment extends BaseFlightControlFragment {
 
         final ArrayAdapter<String> connectionsAdapter = new ArrayAdapter<>(context, R.layout.spinner_drop_down_mission_item, connectionTypes);
 
-        Spinner connectionsSpinner = (Spinner) view.findViewById(R.id.telem_connection_type);
-        connectionsSpinner.setAdapter(connectionsAdapter);
-        connectionsSpinner.setSelection(connectionsAdapter.getPosition(valuesToLabels.get(savedConnectionType)));
-        connectionsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String connectionValue = connectionTypeValues[position];
-
-                //Save the selected connection to the shared preferences
-                prefs.setConnectionParameterType(Integer.parseInt(connectionValue));
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+//        Spinner connectionsSpinner = (Spinner) view.findViewById(R.id.telem_connection_type);
+//        connectionsSpinner.setAdapter(connectionsAdapter);
+//        connectionsSpinner.setSelection(connectionsAdapter.getPosition(valuesToLabels.get(savedConnectionType)));
+//        connectionsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                String connectionValue = connectionTypeValues[position];
+//
+//                //Save the selected connection to the shared preferences
+//                prefs.setConnectionParameterType(Integer.parseInt(connectionValue));
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
     }
 
     @Override
