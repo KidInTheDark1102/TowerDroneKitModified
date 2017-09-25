@@ -39,5 +39,5 @@
 
     <dimen name="mission_control_bar_height">105dp</dimen>
 
-    <dimen name="flight_actions_container_width">350dp</dimen>
+    <dimen name="flight_actions_container_width">120dp</dimen>
     </resources>
